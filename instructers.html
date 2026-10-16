@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Instructors - CampusHub University Portal</title>
+</head>
+<body>
+
+    <!-- Header containing accessible navigation across the portal -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>University Student Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html" aria-current="page">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area specific to the Instructors Directory -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section aria-labelledby="instructors-heading">
+            <h2 id="instructors-heading">Our Instructors</h2>
+            <p>Meet our distinguished faculty members at CampusHub. Our professors and assistants are dedicated researchers and educators leading development in engineering, business, and design.</p>
+        </section>
+
+        <!-- Search and Filter Controls -->
+        <section aria-label="Instructor Filters">
+            <h3>Filter &amp; Search Faculty</h3>
+            <form action="#" method="get">
+                <div>
+                    <label for="instructor-search">Search Instructors:</label>
+                    <input type="search" id="instructor-search" name="search" placeholder="e.g. Agon Bajgora, Berat Ujkani...">
+                </div>
+
+                <div>
+                    <label for="dept-select">Department:</label>
+                    <select id="dept-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="cs">Computer Science &amp; Engineering</option>
+                        <option value="business">Business &amp; Management</option>
+                        <option value="design">Arts &amp; Design</option>
+                        <option value="languages">Languages</option>
+                        <option value="ee">Electrical Engineering</option>
+                    </select>
+                </div>
+
+                <button type="submit">Filter Directory</button>
+            </form>
+        </section>
+
+        <!-- Instructors Directory Grid (6 Faculty Profiles) -->
+        <section aria-label="Faculty Directory">
+            <h3>Faculty Members (6)</h3>
+
+            <!-- 1. Prof. ass. dr. Berat Ujkani -->
+            <article>
+                <img src="images/berat-ujkani.jpg" alt="Portrait of Prof. ass. dr. Berat Ujkani wearing a dark professional suit.">
+                <h4>Prof. ass. dr. Berat Ujkani</h4>
+                <p><strong>Title:</strong> Professor / Head of Department</p>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Database Management Systems</li>
+                    <li>Relational Architecture</li>
+                    <li>Information Systems Security</li>
+                </ul>
+
+                <a href="instructor-profile-ujkani.html">View Profile</a>
+            </article>
+
+            <!-- 2. Ass. Agon Bajgora -->
+            <article>
+                <img src="images/agon-bajgora.jpg" alt="Portrait of Ass. Agon Bajgora in a modern smart-casual workspace setting.">
+                <h4>Ass. Agon Bajgora</h4>
+                <p><strong>Title:</strong> Teaching Assistant / Committee Member</p>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Artificial Intelligence Engineering</li>
+                    <li>Semantic Technologies</li>
+                    <li>Quiet System Architectures</li>
+                </ul>
+
+                <a href="instructor-profile-bajgora.html">View Profile</a>
+            </article>
+
+            <!-- 3. Prof. Dr. Hana Gashi -->
+            <article>
+                <img src="images/hana-gashi.jpg" alt="Portrait of Prof. Dr. Hana Gashi sitting in front of an academic library background.">
+                <h4>Prof. Dr. Hana Gashi</h4>
+                <p><strong>Title:</strong> Full Professor</p>
+                <p><strong>Department:</strong> Business &amp; Management</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Strategic Business Models</li>
+                    <li>Corporate Behavior</li>
+                    <li>Risk Assessment Mitigation</li>
+                </ul>
+
+                <a href="instructor-profile-gashi.html">View Profile</a>
+            </article>
+
+            <!-- 4. Ass. Dr. Valon Krasniqi -->
+            <article>
+                <img src="images/valon-krasniqi.jpg" alt="Portrait of Ass. Dr. Valon Krasniqi inside an engineering research laboratory.">
+                <h4>Ass. Dr. Valon Krasniqi</h4>
+                <p><strong>Title:</strong> Assistant Professor</p>
+                <p><strong>Department:</strong> Electrical Engineering</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Linear Circuit Systems</li>
+                    <li>Oscilloscope Readout Diagnostics</li>
+                    <li>Frequency Response Modeling</li>
+                </ul>
+
+                <a href="instructor-profile-krasniqi.html">View Profile</a>
+            </article>
+
+            <!-- 5. Ma. Eliza Morina -->
+            <article>
+                <img src="images/eliza-morina.jpg" alt="Portrait of Ma. Eliza Morina smiling near a creative design studio setup.">
+                <h4>Ma. Eliza Morina</h4>
+                <p><strong>Title:</strong> Senior Lecturer</p>
+                <p><strong>Department:</strong> Arts &amp; Design</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Visual Identity Architecture</li>
+                    <li>Typographic Hierarchies</li>
+                    <li>Vector Design Principles</li>
+                </ul>
+
+                <a href="instructor-profile-morina.html">View Profile</a>
+            </article>
+
+            <!-- 6. Dr. Driton Berisha -->
+            <article>
+                <img src="images/driton-berisha.jpg" alt="Portrait of Dr. Driton Berisha in a lecture hall setting holding academic notebooks.">
+                <h4>Dr. Driton Berisha</h4>
+                <p><strong>Title:</strong> Assistant Professor</p>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                
+                <h5>Fields of Expertise:</h5>
+                <ul>
+                    <li>Advanced Software Architecture</li>
+                    <li>Agile Kanban Methodologies</li>
+                    <li>Test-Driven Development (TDD)</li>
+                </ul>
+
+                <a href="instructor-profile-berisha.html">View Profile</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Student Portal. All rights reserved.</p>
+        <p>Contact Support: support@campushub.edu</p>
+    </footer>
+
+</body>
+</html>

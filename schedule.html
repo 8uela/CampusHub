@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule - CampusHub University Portal</title>
+</head>
+<body>
+
+    <!-- Header containing accessible navigation across the portal -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>University Student Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area specific to the Student Timetable -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section aria-labelledby="schedule-heading">
+            <h2 id="schedule-heading">Weekly Schedule</h2>
+            <p>Access your personalized class layout, matching weekly lecture configurations, assigned instructors, and designated facility locations.</p>
+            
+            <!-- Structural Warning Alert regarding schedule alterations -->
+            <p><strong>Important Note:</strong> This timetable is subject to academic changes. Please monitor official announcements for structural adjustment notifications.</p>
+        </section>
+
+        <!-- Calendar Navigation and View Controls -->
+        <section aria-label="Schedule Controls">
+            <h3>April 2026</h3>
+            
+            <!-- Timeline Pagination -->
+            <div>
+                <button type="button">Previous Week</button>
+                <button type="button">Next Week</button>
+            </div>
+
+            <!-- Display Toggles -->
+            <div>
+                <button type="button" aria-pressed="true">Week View</button>
+                <button type="button" aria-pressed="false">Month View</button>
+            </div>
+        </section>
+
+        <!-- Semantic Timetable Matrix -->
+        <section aria-label="Timetable Matrix">
+            <table border="1">
+                <caption>Class Schedule for the Current Week (Monday through Friday)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time Slots</th>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1: Early Morning Slot -->
+                    <tr>
+                        <th scope="row"><time datetime="08:30">08:30</time> - <time datetime="10:15">10:15</time></th>
+                        <td>
+                            <strong>Web Development</strong><br>
+                            Ass. Agon Bajgora<br>
+                            Room: Lab 3
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Data Structures &amp; Algorithms</strong><br>
+                            Dr. Driton Berisha<br>
+                            Room: Amphitheater A
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Digital Marketing</strong><br>
+                            Prof. Dr. Hana Gashi<br>
+                            Room: Room 102
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Late Morning Slot -->
+                    <tr>
+                        <th scope="row"><time datetime="10:30">10:30</time> - <time datetime="12:15">12:15</time></th>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Database Systems</strong><br>
+                            Prof. ass. dr. Berat Ujkani<br>
+                            Room: Lab 1
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Software Engineering</strong><br>
+                            Dr. Driton Berisha<br>
+                            Room: Room 204
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                    </tr>
+
+                    <!-- Row 3: Early Afternoon Slot -->
+                    <tr>
+                        <th scope="row"><time datetime="13:00">13:00</time> - <time datetime="14:45">14:45</time></th>
+                        <td>
+                            <strong>Electrical Engineering</strong><br>
+                            Ass. Dr. Valon Krasniqi<br>
+                            Room: Lab 5
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Business Management</strong><br>
+                            Prof. Dr. Hana Gashi<br>
+                            Room: Room 105
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>Graphic Design</strong><br>
+                            Ma. Eliza Morina<br>
+                            Room: Design Studio
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Late Afternoon Slot -->
+                    <tr>
+                        <th scope="row"><time datetime="15:00">15:00</time> - <time datetime="16:45">16:45</time></th>
+                        <td><em>No Scheduled Class</em></td>
+                        <td>
+                            <strong>English Language</strong><br>
+                            Ma. Eliza Morina<br>
+                            Room: Room 301
+                        </td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td><em>No Scheduled Class</em></td>
+                        <td><em>No Scheduled Class</em></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Student Portal. All rights reserved.</p>
+        <p>Contact Support: support@campushub.edu</p>
+    </footer>
+
+</body>
+</html>

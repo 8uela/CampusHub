@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - CampusHub University Portal</title>
+</head>
+<body>
+
+    <!-- Header containing accessible navigation across the portal -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>University Student Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" aria-current="page">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area specific to the Course Catalog -->
+    <main>
+        
+        <!-- Introduction Section -->
+        <section aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Our Courses</h2>
+            <p>Browse through the complete academic catalog at CampusHub. Explore undergraduate and graduate level coursework managed by our dedicated departments.</p>
+        </section>
+
+        <!-- Search and Filter Controls -->
+        <section aria-label="Course Filters">
+            <h3>Filter & Search Courses</h3>
+            <form action="#" method="get">
+                <div>
+                    <label for="course-search">Search Courses:</label>
+                    <input type="search" id="course-search" name="search" placeholder="e.g. Algorithms, Marketing...">
+                </div>
+
+                <div>
+                    <label for="dept-select">Department:</label>
+                    <select id="dept-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="cs">Computer Science &amp; Engineering</option>
+                        <option value="business">Business &amp; Management</option>
+                        <option value="design">Arts &amp; Design</option>
+                        <option value="languages">Languages</option>
+                        <option value="ee">Electrical Engineering</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="level-select">Level:</label>
+                    <select id="level-select" name="level">
+                        <option value="">All Levels</option>
+                        <option value="undergrad">Undergraduate</option>
+                        <option value="grad">Graduate</option>
+                    </select>
+                </div>
+
+                <button type="submit">Apply Filters</button>
+            </form>
+
+            <!-- Quick Filter Links by Category -->
+            <nav aria-label="Course Categories">
+                <h4>Quick Categories:</h4>
+                <ul>
+                    <li><a href="?cat=core">Core Requirements</a></li>
+                    <li><a href="?cat=electives">Electives</a></li>
+                    <li><a href="?cat=labs">Lab Courses</a></li>
+                    <li><a href="?cat=seminars">Seminars</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Course Catalog Grid Layout -->
+        <section aria-label="Course Catalog">
+            <h3>Available Courses (9)</h3>
+
+            <!-- 1. Web Development -->
+            <article>
+                <img src="images/web-development.jpg" alt="A laptop screen displaying semantic HTML and CSS code layout.">
+                <h4>Web Development</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                <p><strong>ECTS:</strong> 6 Credits</p>
+                <p>Learn structural layout patterns using modern Semantic HTML5, styling with CSS, and interactive design methodologies.</p>
+                <a href="course-details-web.html">View Details</a>
+            </article>
+
+            <!-- 2. Database Systems -->
+            <article>
+                <img src="images/database-systems.jpg" alt="A conceptual schematic diagram of interconnected database tables.">
+                <h4>Database Systems</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                <p><strong>ECTS:</strong> 5 Credits</p>
+                <p>An introduction to relational database structures, SQL querying languages, indexing, and transactional normalization.</p>
+                <a href="course-details-db.html">View Details</a>
+            </article>
+
+            <!-- 3. Data Structures & Algorithms -->
+            <article>
+                <img src="images/data-structures.jpg" alt="A whiteboard drawing showing a binary search tree and runtime complexity charts.">
+                <h4>Data Structures &amp; Algorithms</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                <p><strong>ECTS:</strong> 6 Credits</p>
+                <p>Master underlying data objects like arrays, stacks, queues, trees, alongside sorting and search optimizations.</p>
+                <a href="course-details-dsa.html">View Details</a>
+            </article>
+
+            <!-- 4. Digital Marketing -->
+            <article>
+                <img src="images/digital-marketing.jpg" alt="A line chart tracking user engagement metrics and conversion funnels over time.">
+                <h4>Digital Marketing</h4>
+                <p><strong>Department:</strong> Business &amp; Management</p>
+                <p><strong>ECTS:</strong> 4 Credits</p>
+                <p>Explore search engine optimization patterns, social network strategy analytics, and paid advertisement modeling metrics.</p>
+                <a href="course-details-marketing.html">View Details</a>
+            </article>
+
+            <!-- 5. Graphic Design -->
+            <article>
+                <img src="images/graphic-design.jpg" alt="A digital drawing tablet displaying vector paths and typography alignment guides.">
+                <h4>Graphic Design</h4>
+                <p><strong>Department:</strong> Arts &amp; Design</p>
+                <p><strong>ECTS:</strong> 5 Credits</p>
+                <p>Study color harmonies, layout compositions, typographic hierarchies, and visual identity architecture foundations.</p>
+                <a href="course-details-design.html">View Details</a>
+            </article>
+
+            <!-- 6. Software Engineering -->
+            <article>
+                <img src="images/software-engineering.jpg" alt="A team of software engineers reviewing an agile kanban board and software flowcharts.">
+                <h4>Software Engineering</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Engineering</p>
+                <p><strong>ECTS:</strong> 6 Credits</p>
+                <p>Dive deep into product development lifecycles, structural architecture paradigms, team agile setups, and test architectures.</p>
+                <a href="course-details-se.html">View Details</a>
+            </article>
+
+            <!-- 7. Business Management -->
+            <article>
+                <img src="images/business-management.jpg" alt="A boardroom meeting table showcasing a corporate strategic report roadmap.">
+                <h4>Business Management</h4>
+                <p><strong>Department:</strong> Business &amp; Management</p>
+                <p><strong>ECTS:</strong> 5 Credits</p>
+                <p>An overview of administrative frameworks, resource mapping, corporate behavioral models, and risk management.</p>
+                <a href="course-details-business.html">View Details</a>
+            </article>
+
+            <!-- 8. English Language -->
+            <article>
+                <img src="images/english-language.jpg" alt="An open lexicon textbook sitting on a wooden library study desk.">
+                <h4>English Language</h4>
+                <p><strong>Department:</strong> Languages</p>
+                <p><strong>ECTS:</strong> 3 Credits</p>
+                <p>Focuses on advanced presentation speaking mechanics, business writing standards, and comprehensive essay analysis.</p>
+                <a href="course-details-english.html">View Details</a>
+            </article>
+
+            <!-- 9. Electrical Engineering -->
+            <article>
+                <img src="images/electrical-engineering.jpg" alt="An engineering workbench containing a green circuit board and digital oscilloscope readout.">
+                <h4>Electrical Engineering</h4>
+                <p><strong>Department:</strong> Electrical Engineering</p>
+                <p><strong>ECTS:</strong> 6 Credits</p>
+                <p>Investigate fundamental laws governing linear circuit systems, node analytics, and frequency response metrics.</p>
+                <a href="course-details-ee.html">View Details</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Student Portal. All rights reserved.</p>
+        <p>Contact Support: support@campushub.edu</p>
+    </footer>
+
+</body>
+</html>

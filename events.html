@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - CampusHub University Portal</title>
+</head>
+<body>
+
+    <!-- Header containing accessible navigation across the portal -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>University Student Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html" aria-current="page">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area specific to the University Events Catalog -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section aria-labelledby="events-heading">
+            <h2 id="events-heading">Upcoming Events</h2>
+            <p>Stay connected with campus life at CampusHub. Discover educational workshops, guest lectures, career networking opportunities, and academic seminars happening across our faculties.</p>
+        </section>
+
+        <!-- Search and Filter Controls -->
+        <section aria-label="Event Filters">
+            <h3>Filter &amp; Search Events</h3>
+            <form action="#" method="get">
+                <div>
+                    <label for="event-search">Search Events:</label>
+                    <input type="search" id="event-search" name="search" placeholder="e.g. AI, Workshop, Career...">
+                </div>
+
+                <div>
+                    <label for="category-select">Event Category:</label>
+                    <select id="category-select" name="category">
+                        <option value="">All Categories</option>
+                        <option value="lectures">Guest Lectures</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="career">Career &amp; Fairs</option>
+                        <option value="seminars">Seminars</option>
+                    </select>
+                </div>
+
+                <button type="submit">Filter Events</button>
+            </form>
+
+            <!-- Quick Filter Links by Category -->
+            <nav aria-label="Event Type Quick Links">
+                <h4>Quick Categories:</h4>
+                <ul>
+                    <li><a href="?type=academic">Academic</a></li>
+                    <li><a href="?type=professional">Professional Development</a></li>
+                    <li><a href="?type=student-life">Student Life</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Events List Section -->
+        <section aria-label="Scheduled Events">
+            <h3>Event Timeline (4)</h3>
+
+            <!-- 1. Guest Lecture: AI in Education -->
+            <article>
+                <img src="images/ai-education.jpg" alt="A presenter delivering a slideshow presentation on neural networks to students in a modern university lecture hall.">
+                <h4>Guest Lecture: AI in Education</h4>
+                
+                <p><strong>Date:</strong> <time datetime="2025-04-15">April 15, 2025</time></p>
+                <p><strong>Time:</strong> <time datetime="10:00">10:00 AM - 12:00 PM</time></p>
+                <p><strong>Venue:</strong> Amphitheater A, Faculty of Computer Science</p>
+                
+                <p>Join external artificial intelligence pioneers as they explore how machine learning models, semantic layers, and automated tooling frameworks are modernizing classroom learning environments.</p>
+                
+                <a href="event-details-ai.html">View Details</a>
+            </article>
+
+            <!-- 2. Workshop: Web Development -->
+            <article>
+                <img src="images/web-workshop.jpg" alt="Students collaborating and writing structural code on desktop computers during an engineering programming workshop.">
+                <h4>Workshop: Web Development</h4>
+                
+                <p><strong>Date:</strong> <time datetime="2025-04-22">April 22, 2025</time></p>
+                <p><strong>Time:</strong> <time datetime="13:00">1:00 PM - 4:00 PM</time></p>
+                <p><strong>Venue:</strong> Lab 3, Faculty of Mechanical and Computer Engineering</p>
+                
+                <p>An interactive, hands-on session designed to teach students the fundamentals of building structural web components utilizing accessible, modern Semantic HTML5 elements and configurations.</p>
+                
+                <a href="event-details-web.html">View Details</a>
+            </article>
+
+            <!-- 3. Career Fair 2025 -->
+            <article>
+                <img src="images/career-fair.jpg" alt="A busy university sports hall featuring booths from various engineering and tech companies talking with undergraduate applicants.">
+                <h4>Career Fair 2025</h4>
+                
+                <p><strong>Date:</strong> <time datetime="2025-04-30">April 30, 2025</time></p>
+                <p><strong>Time:</strong> <time datetime="09:00">9:00 AM - 5:00 PM</time></p>
+                <p><strong>Venue:</strong> Main Campus Sports Complex Hall</p>
+                
+                <p>Connect with leading national and regional employers in software engineering, management, and technology. Bring your updated resume profiles to secure internships and career placements.</p>
+                
+                <a href="event-details-career.html">View Details</a>
+            </article>
+
+            <!-- 4. Seminar: Digital Transformation -->
+            <article>
+                <img src="images/digital-seminar.jpg" alt="A round table panel discussion with business leaders discussing technology roadmaps and corporate infrastructures.">
+                <h4>Seminar: Digital Transformation</h4>
+                
+                <p><strong>Date:</strong> <time datetime="2025-05-12">May 12, 2025</time></p>
+                <p><strong>Time:</strong> <time datetime="11:00">11:00 AM - 1:30 PM</time></p>
+                <p><strong>Venue:</strong> Conference Hall B, Administrative Building</p>
+                
+                <p>A deep-dive discussion focusing on the integration of digital technology into business infrastructure operations, examining strategic corporate risk analysis and modernization trends.</p>
+                
+                <a href="event-details-seminar.html">View Details</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Student Portal. All rights reserved.</p>
+        <p>Contact Support: support@campushub.edu</p>
+    </footer>
+
+</body>
+</html>

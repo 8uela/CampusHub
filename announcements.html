@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - CampusHub University Portal</title>
+</head>
+<body>
+
+    <!-- Header containing accessible navigation across the portal -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>University Student Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html" aria-current="page">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area specific to the University Announcements Bulletin -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section aria-labelledby="announcements-heading">
+            <h2 id="announcements-heading">Announcements</h2>
+            <p>Stay informed with the latest official notices, academic updates, and campus bulletins from the CampusHub administration and student bodies.</p>
+        </section>
+
+        <!-- Search and Filter Controls -->
+        <section aria-label="Announcement Filters">
+            <h3>Filter &amp; Search Announcements</h3>
+            <form action="#" method="get">
+                <div>
+                    <label for="announcement-search">Search Notices:</label>
+                    <input type="search" id="announcement-search" name="search" placeholder="e.g. Scholarship, Registration...">
+                </div>
+
+                <div>
+                    <label for="category-select">Notice Category:</label>
+                    <select id="category-select" name="category">
+                        <option value="">All Categories</option>
+                        <option value="academic">Academic Affairs</option>
+                        <option value="facilities">Campus Facilities</option>
+                        <option value="financial">Scholarships &amp; Funding</option>
+                        <option value="it">IT Support &amp; Maintenance</option>
+                        <option value="student-life">Student Elections &amp; Life</option>
+                    </select>
+                </div>
+
+                <button type="submit">Filter Bulletins</button>
+            </form>
+        </section>
+
+        <!-- Announcements Timeline Grid -->
+        <section aria-label="Latest Announcements">
+            <h3>Recent Bulletins (6)</h3>
+
+            <!-- 1. Registration for Summer Semester -->
+            <article>
+                <h4>Registration for Summer Semester</h4>
+                <p><strong>Category:</strong> Academic Affairs</p>
+                <p><strong>Posted On:</strong> <time datetime="2026-05-10">May 10, 2026</time></p>
+                <p>Course enrollment channels for the upcoming summer semester are opening soon. Ensure all prerequisite courses are cleared on your student profile prior to your assigned registration window.</p>
+                <a href="announcement-details-registration.html">Read Full Notice</a>
+            </article>
+
+            <!-- 2. New Library Access Hours -->
+            <article>
+                <h4>New Library Access Hours</h4>
+                <p><strong>Category:</strong> Campus Facilities</p>
+                <p><strong>Posted On:</strong> <time datetime="2026-05-08">May 8, 2026</time></p>
+                <p>To assist students preparing for upcoming final examination frameworks, the central university library facility is extending its standard evening operating schedule on weekdays.</p>
+                <a href="announcement-details-library.html">Read Full Notice</a>
+            </article>
+
+            <!-- 3. Scholarship Opportunities -->
+            <article>
+                <h4>Scholarship Opportunities</h4>
+                <p><strong>Category:</strong> Scholarships &amp; Funding</p>
+                <p><strong>Posted On:</strong> <time datetime="2026-05-04">May 4, 2026</time></p>
+                <p>Applications are now open for the regional academic excellence grant. Eligible undergraduate students matching baseline ECTS benchmarks can submit structural application essays online.</p>
+                <a href="announcement-details-scholarships.html">Read Full Notice</a>
+            </article>
+
+            <!-- 4. IT Maintenance Notice -->
+            <article>
+                <h4>IT Maintenance Notice</h4>
+                <p><strong>Category:</strong> IT Support &amp; Maintenance</p>
+                <p><strong>Posted On:</strong> <time datetime="2026-04-28">April 28, 2026</time></p>
+                <p>The central IT engineering team will perform planned system updates on our student credential directory databases this coming weekend. Expect short connectivity windows during this timeframe.</p>
+                <a href="announcement-details-it-maintenance.html">Read Full Notice</a>
+            </article>
+
+            <!-- 5. Student Union Elections -->
+            <article>
+                <h4>Student Union Elections</h4>
+                <p><strong>Category:</strong> Student Elections &amp; Life</p>
+                <p><strong>Posted On:</strong> <time datetime="2026-04-22">April 22, 2026</time></p>
+                <p>Nomination forms for department student representatives are officially available. Download required campaign validation profiles or review voting guidelines for your structural faculty panel.</p>
+                <a href="announcement-details-elections.html">Read Full Notice</a>
+            </article>
+
+            <!-- 6. Welcome Week 2025 -->
+            <article>
+                <h4>Welcome Week 2025</h4>
+                <p><strong>Category:</strong> Student Elections &amp; Life</p>
+                <p><strong>Posted On:</strong> <time datetime="2025-09-01">September 1, 2025</time></p>
+                <p>Orientation schedules, campus directory tours, and networking configurations are locked in for our arriving freshmen engineering, language, and design cohorts.</p>
+                <a href="announcement-details-welcome.html">Read Full Notice</a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Student Portal. All rights reserved.</p>
+        <p>Contact Support: support@campushub.edu</p>
+    </footer>
+
+</body>
+</html>
